@@ -1,6 +1,6 @@
 {
   "name": "chartjs-plugin-funnel",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The funnel plugin for Chart.js",
   "main": "dist/chart.funnel.js",
   "directories": {
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rafalpospiech/chartjs-plugin-funnel"
+    "url": "https://github.com/YetiForceCompany/chartjs-plugin-funnel"
   },
   "keywords": [
     "Chart.js",
@@ -48,10 +48,10 @@
     "funnel",
     "plugin"
   ],
-  "author": "Jone Casper",
+  "author": "Jone Casper & YetiForce",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rafalpospiech/chartjs-plugin-funnel/issues"
+    "url": "https://github.com/YetiForceCompany/chartjs-plugin-funnel/issues"
   },
-  "homepage": "https://github.com/rafalpospiech/chartjs-plugin-funnel"
+  "homepage": "https://github.com/YetiForceCompany/chartjs-plugin-funnel"
 }
