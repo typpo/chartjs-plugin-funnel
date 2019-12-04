@@ -50,6 +50,9 @@
     "funnel",
     "plugin"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Jone Casper & YetiForce",
   "license": "MIT",
   "bugs": {
