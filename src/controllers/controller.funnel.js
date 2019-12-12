@@ -121,6 +121,22 @@ module.exports = function (Chart) {
 			}
 		},
 		scales: {
+			xAxes: [{
+					position: 'left',
+					type: 'category',
+					display: false,
+					// Specific to Horizontal Bar Controller
+					categoryPercentage: 0.8,
+					barPercentage: 0.9,
+
+					// offset settings
+					offset: true,
+
+					// grid line settings
+					gridLines: {
+						offsetGridLines: true
+					}
+				}],
 			yAxes: [{
 					position: 'left',
 					type: 'category',
@@ -183,6 +199,9 @@ module.exports = function (Chart) {
 			var dataset = me.getDataset();
 			if (meta.yAxisID === null || !(meta.yAxisID in me.chart.scales)) {
 				meta.yAxisID = dataset.yAxisID || me.chart.options.scales.yAxes[0].id;
+			}
+			if (meta.xAxisID === null || !(meta.xAxisID in me.chart.scales)) {
+				meta.xAxisID = dataset.xAxisID || me.chart.options.scales.xAxes[0].id;
 			}
 		},
 
@@ -265,7 +284,7 @@ module.exports = function (Chart) {
 					base = chartArea.top + (viewIndex + 1) * (elHeight + gap) - gap;
 
 			var meta = me.getMeta();
-			trapezium._yScale = me.getScaleForId(meta.yAxisID);
+			trapezium._xScale = me.getScaleForId(meta.xAxisID);
 
 			if (sort === 'asc' || sort === 'data-asc' || !sort) {
 				// Find previous element which is visible
