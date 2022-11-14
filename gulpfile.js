@@ -31,7 +31,7 @@ gulp.task("js", function() {
   var bundled = browserify("./src/chart.funnel.js", {
     standalone: "Chart.Funnel"
   })
-    .plugin(collapse)
+    //.plugin(collapse)
     .bundle()
     .pipe(source("chart.funnel.bundled.js"))
     .pipe(insert.prepend(header))
@@ -48,8 +48,8 @@ gulp.task("js", function() {
   var nonBundled = browserify("./src/chart.funnel.js", {
     standalone: "Chart.Funnel"
   })
-    .ignore("chart.js")
-    .plugin(collapse)
+    //.ignore("chart.js")
+    //.plugin(collapse)
     .bundle()
     .pipe(source("chart.funnel.js"))
     .pipe(insert.prepend(header))

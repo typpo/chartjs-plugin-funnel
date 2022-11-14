@@ -6,7 +6,10 @@
   "directories": {
     "example": "example"
   },
-  "dependencies": {
+  "resolutions": {
+    "graceful-fs": "^4.2.10"
+  },
+  "peerDependencies": {
     "chart.js": ">2.7.0"
   },
   "devDependencies": {
@@ -35,7 +38,8 @@
     "karma-jasmine": "^1.0.2",
     "merge-stream": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0"
+    "watchify": "^3.7.0",
+    "chart.js": "^2.9.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
